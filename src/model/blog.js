@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const BlogSchema = new mongoose.Schema({
     title:{
         type:String,
-        required:true
+        required:true,
+        trim:true
     },
     body:{
         type:String,
-        required:true
+        required:true,
+        trime:true
     },
     createdBy:{
         type:mongoose.Schema.Types.ObjectId,
@@ -18,15 +20,9 @@ const BlogSchema = new mongoose.Schema({
         default:true
     },
     geoLocation:{
-        type:{
-            type:String,
-            enum:['Point'],
-            required:true
-        },
-        coordinates:{
             type:[Number],  //longitute come first then lattitude
             required:true
-        }
+        
     }
 },{timestamps:true})
 

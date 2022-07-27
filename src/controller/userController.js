@@ -1,5 +1,3 @@
-const express = require('express');
-let emailValidator = require('email-validator');
 const UserModel = require('../model/user')
 // email and name
 const createUser = async (req,res) =>{

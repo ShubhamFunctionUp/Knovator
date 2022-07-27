@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0",
+    "nodemon": "^2.0.19",
+    "validator": "^13.7.0"
+  },
+  "name": "knovator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhamFunctionUp/Knovator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubhamFunctionUp/Knovator/issues"
+  },
+  "homepage": "https://github.com/ShubhamFunctionUp/Knovator#readme",
+  "description": ""
+}

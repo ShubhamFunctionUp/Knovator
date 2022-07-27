@@ -3,7 +3,7 @@ const validator = require('../validator/validator')
 const UserModel = require('../model/user');
 
 
-// Post API
+// --------------------------------------------Post API-----------------------------------------------------------
 const addPost = async (req,res)=>{
     try {
      
@@ -44,8 +44,7 @@ const addPost = async (req,res)=>{
 
 
 
-// get Post
-
+// -----------------------------------------------get Post-------------------------------------------------------
 const getPost = async (req,res)=>{
     try {
         let query = req.query;
@@ -80,7 +79,7 @@ const getPost = async (req,res)=>{
     }
 }
 
-// Simple get
+//----------------------------------------- Simple get-------------------------------------------------
 const getSimplePost = async (req,res)=>{
     try {
         let postId = req.body.postId
@@ -94,7 +93,7 @@ const getSimplePost = async (req,res)=>{
 }
 
 
-// delete api
+// ------------------------------------delete api-------------------------------------------------------------
 
 const deletePost = async (req,res)=>{
    try {
@@ -123,7 +122,7 @@ const deletePost = async (req,res)=>{
 
 }
 
-// TASK 4
+// ---------------------------------------------------TASK 4-----------------------------------------------------
 
 const fetchApiGeoLocation = async (req,res)=>{
 
@@ -137,7 +136,7 @@ const fetchApiGeoLocation = async (req,res)=>{
 }
 
 
-// Task 5
+// ------------------------------------Task 5-----------------------------------------------------------------------
 
 const countActiveAndInActive = async(req,res)=>{
     let activePost = await BlogModel.find({isActive:true}).count()
